@@ -1,4 +1,4 @@
-## Bug Demonstration: ts-node#365
+# Bug Demonstration: ts-node#365
 
 This demonstrates the issue discussed in [ts-node#365][issue], namely that Sinon breaks whatever
 test suite it's used in, without error.
