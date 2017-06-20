@@ -1,14 +1,14 @@
 import * as chai from 'chai';
 import * as sinon from 'sinon';
 import * as fs from 'fs';
-import stupidModule from './';
+import aModule from './';
 
 const should = chai.should();
 
-describe('stubbing this stupidModule', () => {
+describe('stubbing aModule', () => {
   describe('normal behaviour', () => {
     it('returns herpa-derpa', () => {
-      const result = stupidModule();
+      const result = aModule();
       result.should.equal('herpa-derpa\n');
     });
   });
@@ -26,10 +26,8 @@ describe('stubbing this stupidModule', () => {
     });
 
     it('returns boo-urns', () => {
-      const result = stupidModule();
+      const result = aModule();
       result.should.equal('boo-urns');
     });
   });
-
-
 });
